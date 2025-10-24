@@ -27,6 +27,6 @@ public class parkir07 {
                 System.out.println("Masukkan jenis kendaraan terlebih dulu!");
             }
         } while (jenis != 0);
-        System.out.println("Total biaya parkir adalah : Rp " + total); 
+        System.out.println("Total biaya parkir adalah : Rp " + total);
     }
 }
