@@ -6,8 +6,8 @@ public class nilaiKelompok07 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        int i = 1, j, nilai;
-        float totalNilai, rataNilai;
+        int i = 1, j, nilai, kelTertinggi = 0;
+        float totalNilai, rataNilai, tertinggi = 0;
 
         while (i <= 6) {
             System.out.println("Kelompok " + i);
@@ -20,8 +20,15 @@ public class nilaiKelompok07 {
             }
             rataNilai = totalNilai / 5;
             System.out.println("Kelompok " + i + " : " + "Nilai rata - rata = " + rataNilai);
+
+            if (rataNilai > tertinggi) {
+                tertinggi = rataNilai;
+                kelTertinggi = i;
+            }
             i++;
         }
 
+        System.out.print("Kelompok dengan rata - rata nilai tertinggi adalah kelompok = " + kelTertinggi);
+        System.out.println("\ndengan rata - rata nilai : " + tertinggi);
     }
 }
