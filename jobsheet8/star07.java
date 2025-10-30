@@ -2,7 +2,7 @@ package jobsheet8;
 
 import java.util.Scanner;
 
-public class star07 {
+public class Star07 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
