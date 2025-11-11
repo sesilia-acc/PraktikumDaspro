@@ -18,15 +18,21 @@ public class searchNilai07 {
         System.out.print("Masukkan nilai yang ingin dicari : ");
         int key = sc.nextInt();
         int hasil = 0;
+        boolean nilaiKetemu = false;
 
         for (int i = 0; i < nilaiMhs.length; i++) {
             if (key == nilaiMhs[i]) {
+                nilaiKetemu = true;
                 hasil = (i + 1);
                 break;
             }
         }
         System.out.println();
-        System.out.println("Nilai " + key + " ketemu, merupakan nilai mahasiswa ke-" + hasil);
+        if (nilaiKetemu) {
+            System.out.println("Nilai " + key + " ketemu, merupakan nilai mahasiswa ke-" + hasil);
+        } else {
+            System.out.println("Nilai yang dicari tidak ditemukan");
+        }
         System.out.println();
     }
 }
